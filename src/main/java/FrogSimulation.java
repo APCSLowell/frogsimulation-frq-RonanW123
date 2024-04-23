@@ -17,10 +17,12 @@ public class FrogSimulation
 	{ 
 		/* to be implemented in part (a) */
 		int d = 0, h = 0;
-		while(d < goalDistance && h < maxHops)
+		while(h < maxHops){
 			d += hopDistance();
-		if(d >= goalDistance)
-			return true;
+			h++
+			if(d >= goalDistance)
+				return true;
+		}
 		return false;
 	}
 	
